@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Ashok Kumar Mahato</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div id="particles-container"></div>
+    </div>
+
+    <!-- Cursor Effect -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">AKM</span>
+                <span class="logo-bracket">/&gt;</span>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="buttons">
+                <ul>
+                    <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="#skills" class="nav-link"><i class="fas fa-code"></i> Skills</a></li>
+                    <li><a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                    <li><a href="#achievements" class="nav-link"><i class="fas fa-trophy"></i> Achievements</a></li>
+                    <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="home-container">
+                <div class="leftsection">
+                    <div class="terminal-header">
+                        <span class="terminal-dot red"></span>
+                        <span class="terminal-dot yellow"></span>
+                        <span class="terminal-dot green"></span>
+                        <span class="terminal-title">developer@portfolio:~</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p class="terminal-line"><span class="prompt">$</span> whoami</p>
+                        <div class="myname">
+                            <h1>Hi, I'm <span class="highlight glitch" data-text="Ashok Kumar Mahato">Ashok Kumar Mahato</span></h1>
+                        </div>
+                        <p class="terminal-line"><span class="prompt">$</span> cat description.txt</p>
+                        <div class="typed-container">
+                            <span id="element"></span>
+                            <span class="typed-cursor">_</span>
+                        </div>
+                    </div>
+                    <div class="cta-buttons">
+                        <a href="#about" class="btn primary-btn">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn secondary-btn">
+                            <span>Contact Me</span>
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    <div class="tech-stack-preview">
+                        <span class="tech-label">Tech Stack:</span>
+                        <div class="tech-icons">
+                            <i class="fab fa-python" title="Python"></i>
+                            <i class="fab fa-js" title="JavaScript"></i>
+                            <i class="fab fa-html5" title="HTML5"></i>
+                            <i class="fab fa-css3-alt" title="CSS3"></i>
+                            <i class="fab fa-linux" title="Linux"></i>
+                            <i class="fab fa-docker" title="Docker"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightsection">
+                    <div class="hero-visual">
+                        <div class="code-window">
+                            <div class="code-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                                <span class="file-name">portfolio.py</span>
+                            </div>
+                            <pre class="code-content">
+<code><span class="keyword">class</span> <span class="class-name">Developer</span>:
+    <span class="keyword">def</span> <span class="function">__init__</span>(<span class="param">self</span>):
+        <span class="param">self</span>.name = <span class="string">"Ashok Kumar"</span>
+        <span class="param">self</span>.role = <span class="string">"CS Student"</span>
+        <span class="param">self</span>.interests = [
+            <span class="string">"AI/ML"</span>,
+            <span class="string">"Cybersecurity"</span>,
+            <span class="string">"Web Dev"</span>
+        ]
+    
+    <span class="keyword">def</span> <span class="function">say_hello</span>(<span class="param">self</span>):
+        <span class="keyword">print</span>(<span class="string">"Hello, World!"</span>)
+
+<span class="comment"># Initialize</span>
+dev = Developer()
+dev.say_hello()</code>
+                            </pre>
+                        </div>
+                        <div class="floating-elements">
+                            <div class="floating-icon" style="--delay: 0s"><i class="fas fa-brain"></i></div>
+                            <div class="floating-icon" style="--delay: 1s"><i class="fas fa-shield-alt"></i></div>
+                            <div class="floating-icon" style="--delay: 2s"><i class="fas fa-code"></i></div>
+                            <div class="floating-icon" style="--delay: 3s"><i class="fas fa-database"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span>Scroll Down</span>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="section-header">
+                <span class="section-number">01.</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-intro">
+                            <span class="highlight-text">Hello!</span> I'm a dedicated computer science student with a 
+                            love for solving complex problems through code.
+                        </p>
+                        <p>
+                            From building web applications to exploring machine learning algorithms, 
+                            I thrive in the world of technology. My passion lies in understanding how 
+                            systems work and finding innovative ways to make them better.
+                        </p>
+                        <p>
+                            When not coding, you'll find me exploring cybersecurity concepts, 
+                            participating in CTF competitions, or contributing to open-source projects.
+                        </p>
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>CS Student</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-brain"></i>
+                                <span>AI Enthusiast</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Security Researcher</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-wrapper">
+                            <div class="image-border"></div>
+                            <div class="profile-placeholder">
+                                <i class="fas fa-user-astronaut"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-section">
+                    <h3><i class="fas fa-link"></i> Connect with Me</h3>
+                    <ul class="social-links">
+                        <li>
+                            <a href="https://github.com/ashokkmahato27" target="_blank" class="social-link github">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/ashok-kumar-mahato-04735b346/" target="_blank" class="social-link linkedin">
+                                <i class="fab fa-linkedin-in"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/share/1H82seWTf6/" target="_blank" class="social-link facebook">
+                                <i class="fab fa-facebook-f"></i>
+                                <span>Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:ashokkmahato2024@gmail.com" class="social-link email">
+                                <i class="fas fa-envelope"></i>
+                                <span>Email</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="section-header">
+                <span class="section-number">02.</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skills-grid">
+                    <div class="skill-card" data-aos="fade-up">
+                        <div class="skill-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Programming Languages</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Python</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--progress: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>JavaScript</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--progress: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>C/C++</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--progress: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="skill-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Web Technologies</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>HTML5</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--progress: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>CSS3/SCSS</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--progress: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>React</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--progress: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="skill-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Tools & Others</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Git/GitHub</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--progress: 88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Docker</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--progress: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Linux</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--progress: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="skill-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>AI & Machine Learning</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>TensorFlow</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--progress: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>PyTorch</span>
+                                    <span>65%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--progress: 65%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Data Science</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--progress: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-cloud">
+                    <span class="tech-tag" style="--size: 1.2">Python</span>
+                    <span class="tech-tag" style="--size: 1.1">JavaScript</span>
+                    <span class="tech-tag" style="--size: 0.9">Docker</span>
+                    <span class="tech-tag" style="--size: 1.3">Machine Learning</span>
+                    <span class="tech-tag" style="--size: 1.0">Git</span>
+                    <span class="tech-tag" style="--size: 1.1">Linux</span>
+                    <span class="tech-tag" style="--size: 0.8">TensorFlow</span>
+                    <span class="tech-tag" style="--size: 1.2">Cybersecurity</span>
+                    <span class="tech-tag" style="--size: 0.9">APIs</span>
+                    <span class="tech-tag" style="--size: 1.0">SQL</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="section-header">
+                <span class="section-number">03.</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-container">
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-label">Featured Project</span>
+                        <h3>Portfolio Website</h3>
+                        <p class="project-description">
+                            A responsive portfolio built with vanilla HTML, CSS, and JavaScript, 
+                            featuring smooth animations, dark tech theme, and modern design principles.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Responsive</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-label">Machine Learning</span>
+                        <h3>AI Model for Traffic Analysis</h3>
+                        <p class="project-description">
+                            Implemented statistical techniques with AI for network traffic analysis 
+                            and cybersecurity threat detection.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>Data Science</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-label">Research</span>
+                        <h3>Economic Impact Analysis Tool</h3>
+                        <p class="project-description">
+                            Mathematical input-output analysis tool for assessing economic impacts 
+                            of infrastructure projects.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>NumPy</span>
+                            <span>Matplotlib</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-shield-virus"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-label">Cybersecurity</span>
+                        <h3>Cryptography Implementation</h3>
+                        <p class="project-description">
+                            Study and implementation of number theory applications in modern 
+                            cryptographic systems.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Cryptography</span>
+                            <span>Number Theory</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements">
+            <div class="section-header">
+                <span class="section-number">04.</span>
+                <h2 class="section-title">Achievements</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="achievements-container">
+                <div class="achievement-category">
+                    <div class="category-header">
+                        <i class="fas fa-scroll"></i>
+                        <h3>Research Papers Published</h3>
+                    </div>
+                    <div class="papers-list">
+                        <div class="paper-card">
+                            <span class="paper-number">01</span>
+                            <div class="paper-content">
+                                <h4>Mathematical and Computational Techniques for Sustainable Agricultural Development in Nepal</h4>
+                                <a href="https://www.nepjol.info/index.php/rjurj/article/view/80697" target="_blank" class="paper-link">
+                                    <i class="fas fa-external-link-alt"></i> Read Paper
+                                </a>
+                            </div>
+                        </div>
+                        <div class="paper-card">
+                            <span class="paper-number">02</span>
+                            <div class="paper-content">
+                                <h4>Simulation of Realistic Motion in Computer Graphics Using Runge-Kutta Methods</h4>
+                                <a href="https://sl1nk.com/WUhk5" target="_blank" class="paper-link">
+                                    <i class="fas fa-external-link-alt"></i> Read Paper
+                                </a>
+                            </div>
+                        </div>
+                        <div class="paper-card">
+                            <span class="paper-number">03</span>
+                            <div class="paper-content">
+                                <h4>Cybersecurity in Network Traffic: Integrating Statistical Techniques with AI</h4>
+                                <a href="https://h7.cl/1f5Pv" target="_blank" class="paper-link">
+                                    <i class="fas fa-external-link-alt"></i> Read Paper
+                                </a>
+                            </div>
+                        </div>
+                        <div class="paper-card">
+                            <span class="paper-number">04</span>
+                            <div class="paper-content">
+                                <h4>Mathematical Input-Output Analysis for Economic Impact Assessment</h4>
+                                <a href="https://journal.ibrahimy.ac.id/index.php/Alifmatika/article/view/6096" target="_blank" class="paper-link">
+                                    <i class="fas fa-external-link-alt"></i> Read Paper
+                                </a>
+                            </div>
+                        </div>
+                        <div class="paper-card">
+                            <span class="paper-number">05</span>
+                            <div class="paper-content">
+                                <h4>Study on Application of Graph Theory in Artificial Intelligence</h4>
+                                <a href="https://eminentpublishing.us/index.php/quest/article/view/121" target="_blank" class="paper-link">
+                                    <i class="fas fa-external-link-alt"></i> Read Paper
+                                </a>
+                            </div>
+                        </div>
+                        <div class="paper-card">
+                            <span class="paper-number">06</span>
+                            <div class="paper-content">
+                                <h4>Computer Applications of Number Theory: Congruence in Mathematical Modeling</h4>
+                                <a href="https://academicajournal.com/IJMTCSI/article/view/34" target="_blank" class="paper-link">
+                                    <i class="fas fa-external-link-alt"></i> Read Paper
+                                </a>
+                            </div>
+                        </div>
+                        <div class="paper-card">
+                            <span class="paper-number">07</span>
+                            <div class="paper-content">
+                                <h4>Computer Applications of Number Theory in Cryptography</h4>
+                                <a href="https://cajmtcs.casjournal.org/index.php/CAJMTCS/article/view/663" target="_blank" class="paper-link">
+                                    <i class="fas fa-external-link-alt"></i> Read Paper
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="achievement-highlight">
+                    <div class="award-card">
+                        <div class="award-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="award-content">
+                            <h3>Innovative Idea Award (IIA)</h3>
+                            <p>Received from Rajarshi Janak University Research Center, Janakpurdham</p>
+                            <a href="https://www.facebook.com/share/p/1BYG6qgdJq/" target="_blank" class="award-link">
+                                <i class="fab fa-facebook"></i> View on Facebook
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="section-header">
+                <span class="section-number">05.</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-container">
+                <div class="contact-content">
+                    <p class="contact-text">
+                        I'm currently looking for new opportunities. Whether you have a question 
+                        or just want to say hi, I'll try my best to get back to you!
+                    </p>
+                    <a href="mailto:ashokkmahato2024@gmail.com" class="btn primary-btn large">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Say Hello</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">AKM</span>
+                <span class="logo-bracket">/&gt;</span>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li>
+                        <a href="https://github.com/ashokkmahato27" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/ashok-kumar-mahato-04735b346/" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/share/1H82seWTf6/" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:ashokkmahato2024@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p class="copyright">
+                Designed & Built by <span class="highlight">Ashok Kumar Mahato</span>
+            </p>
+            <p class="copyright">&copy; 2025 All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
