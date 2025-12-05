@@ -130,7 +130,7 @@ You only need a web browser and a code editor to run this project locally.
    git clone https://github.com/ashokkmahato27/portfolio.git
 
 #  Project Structure
-portfolio/
+portfolio
 │
 ├── 📄 index.html          # Main HTML file
 ├── 🎨 style.css           # All CSS styles
